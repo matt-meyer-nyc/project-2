@@ -1,0 +1,55 @@
+
+body {
+  position: relative;
+}
+
+/*html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }*/
+
+  #map-canvas {
+    height: 100%;
+    width: 100%;
+  }
+
+#origin {
+  position: absolute;
+  right: 240px;
+  top: 30px;
+}
+
+#submit-buttonO {
+  position: absolute;
+  right: 275px;
+  top: 50px;
+}
+
+
+#newInput {
+  position:absolute;
+  right:240px;
+  top: 100px;
+}
+
+#newButton {
+  position:absolute;
+  right:275px;
+  top: 120px;
+}
+
+#originCityPhoto {
+
+}
+
+#directions {
+  position: relative;
+  height: 300px;
+  width: 400px;
+  z-index: 1;
+}
+
+#googleInfo {
+  z-index: 3;
+}

@@ -1,0 +1,152 @@
+
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+
+body {
+  position: relative;
+  background-image: url(http://s32.postimg.org/awyt99mxh/open_road_1.jpg);
+}
+
+/*html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }*/
+  #headerDiv {
+    width: 100%;
+    height: 40px;
+    color: silver;
+    position:absolute;
+    top: 0px;
+  }
+
+  Header {
+    text-shadow: 2px 2px white;
+    text-align: center;
+    font-size: 100px;
+  }
+
+  #bandvan {
+    position: relative;
+    top: 230px;
+    right: 420px;
+  }
+
+  #van {
+    height: 600px;
+    width: 1100px;
+  }
+
+ #whereShow {
+   font-family: 'Rock Salt', cursive;
+   z-index: 10;
+   font-size: 30px;
+   color: white;
+   position: relative;
+   bottom: 450px;
+   left: 100px;
+ }
+
+  #submit-buttonO {
+    position: relative;
+    bottom: 463px;
+    left: 230px;
+    height: 30px;
+    background: none;
+    color: black;
+    border: 2px solid darkblue;
+  }
+
+
+  #origin {
+    position: relative;
+    bottom: 460px;
+    left: 230px;
+    font-family: cursive;
+    border: 1px solid black;
+    height: 40px;
+    width: 50px;
+    border-radius: 10;
+  }
+
+
+
+#newInput {
+  position:absolute;
+  right:240px;
+  top: 100px;
+}
+
+#newButton {
+  position:absolute;
+  right:275px;
+  top: 120px;
+}
+
+#originCityPhoto {
+  position: relative;
+  bottom: 459px;
+  z-index: 1;
+  right: 8px;
+  width: 238px;
+  height:312px;
+  border: 1px solid black;
+  border-radius: 5% 5% 5% 2%;
+}
+
+#directions {
+  position: relative;
+  height: 300px;
+  width: 400px;
+  z-index: 1;
+  right: 200px;
+}
+
+#googleInfo {
+  z-index: 3;
+}
+
+#venue-container {
+  top: 100px;
+}
+
+#venue-template {
+  top:1000px;
+}
+
+#directionsButton {
+  position: relative;
+  right: -1px;
+  z-index: 5;
+  height: 30px;
+  top: -12px;
+}
+
+#directions {
+  position: relative;
+  top: -3200px;
+  right: -650px;
+  top: -3000px;
+}
+
+#origin {
+  position: relative;
+  right: -790px;
+  font-size: 12px;
+  width: 145px;
+  height: 25px;
+}
+
+
+
+#newInput {
+  position: relative;
+  right: -790px;
+  top:-180px;
+  height: 25px;
+}
+
+#newButton {
+  position: relative;
+  right: -674px;
+  top: -162px;
+}

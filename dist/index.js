@@ -1,11 +1,5 @@
 window.onload = function () {
   console.log("giddyup");
-  var key = 'AIzaSyDg4L8NzeMP2Xc6t2DshSTbfKp9KA4wyIw'
-  var venueKey = 'AIzaSyBL4QQWAYuuO5tcygDkOuLoksGrZTHdyjc'
-
-
-
-
 
    var submitO = document.getElementById('submit-buttonO')
    submitO.addEventListener("click", function (e) {
@@ -20,11 +14,13 @@ window.onload = function () {
      document.body.appendChild(newButton)
      newButton.setAttribute('id','newButton')
      newButton.innerText = "Submit";
+     console.log('clicked');
 
      var apiInputO = document.getElementById('origin')
      var usersOrigin = apiInputO.value
+     console.log(usersOrigin);
 
-       var queryO = 'http://maps.googleapis.com/maps/api/geocode/json?address=' + usersOrigin + '&' + key
+       var queryO = 'http://maps.googleapis.com/maps/api/geocode/json?address=' + usersOrigin + '&' + KEY
        $.ajax({
        url: queryO
        }).done(function(responseO) {
@@ -45,7 +41,7 @@ window.onload = function () {
          var apiInputD = document.getElementById('newInput')
          var usersDestination = apiInputD.value
          console.log(usersDestination)
-         var queryD = 'http://maps.googleapis.com/maps/api/geocode/json?address=' + usersDestination + '&' + key
+         var queryD = 'http://maps.googleapis.com/maps/api/geocode/json?address=' + usersDestination + '&' + KEY
          console.log(usersDestination)
          $.ajax({
          url: queryD
@@ -84,10 +80,10 @@ directionsButton.addEventListener("click", function (e){
   var directions = document.createElement('iframe')
   document.body.appendChild(directions)
   directions.setAttribute('id', 'directions')
-  directions.src = "https://www.google.com/maps/embed/v1/directions?key=" + key + "&origin=" + originDir + '&destination=' + destinationDir + '&avoid=tolls|highways'
+  directions.src = "https://www.google.com/maps/embed/v1/directions?key=" + KEY + "&origin=" + originDir + '&destination=' + destinationDir + '&avoid=tolls|highways'
 
 
-var venueQuery = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + responseD.results[0].geometry.location.lat + ',' + responseD.results[0].geometry.location.lng + '&radius=32000&type=night_club&key=' + venueKey
+var venueQuery = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + responseD.results[0].geometry.location.lat + ',' + responseD.results[0].geometry.location.lng + '&radius=32000&type=night_club&key=' + VENUE_KEY
 
 $.ajax({
 url: venueQuery
